@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-// Unmarshal json data
+// Unmarshal json data from request body into [data]
 func ParseBody(r *http.Request, data interface{}) {
 	if body, err := ioutil.ReadAll(r.Body); err == nil {
 
